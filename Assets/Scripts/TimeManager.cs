@@ -4,9 +4,9 @@ using UnityEngine.UI;
 public class TimeManager : MonoBehaviour
 {
     [Header("Tempos por dificuldade (em segundos)")]
-    public int tempoFacil = 10;
-    public int tempoMedio = 5;
-    public int tempoDificil = 3;
+    public int tempoFacil = 20;
+    public int tempoMedio = 15;
+    public int tempoDificil = 7;
 
     [Header("Referências da UI")]
     public Text timerText; // Texto do timer no Canvas.

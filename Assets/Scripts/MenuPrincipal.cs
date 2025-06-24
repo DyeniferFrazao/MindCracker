@@ -6,18 +6,18 @@ public class MenuPrincipalManager : MonoBehaviour
     public void Facil()
     {
         GameSettings.dificuldadeAtual = Dificuldade.Facil;
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("JogoFacil");
     }
 
     public void Medio()
     {
         GameSettings.dificuldadeAtual = Dificuldade.Medio;
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("JogoMedio");
     }
 
     public void Dificil()
     {
         GameSettings.dificuldadeAtual = Dificuldade.Dificil;
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("JogoDificil");
     }
 }

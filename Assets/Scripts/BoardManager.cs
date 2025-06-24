@@ -32,7 +32,7 @@ public class BoardManager : MonoBehaviour
         // Ajusta o GridLayoutGroup para exibir corretamente as colunas.
         GridLayoutGroup gridLayout = gridParent.GetComponent<GridLayoutGroup>();
         if (gridLayout != null)
-            gridLayout.constraintCount = columns;
+          gridLayout.constraintCount = columns;
 
         GenerateBoard();
     }
@@ -57,7 +57,7 @@ public class BoardManager : MonoBehaviour
         }
     }
 
-    // Método público para reiniciar o tabuleiro (útil para o botão de reiniciar).
+   // Método público para reiniciar o tabuleiro (útil para o botão de reiniciar).
     public void ResetBoard()
     {
         GenerateBoard();
