@@ -9,15 +9,15 @@ public class TimeManager : MonoBehaviour
     public int tempoDificil = 7;
 
     [Header("Referências da UI")]
-    public Text timerText; // Texto do timer no Canvas.
-    public Text pairsText; // Texto da contagem de pares.
+    public Text timerText; 
+    public Text pairsText; 
 
     private float tempoRestante;
     private bool jogoAtivo = true;
 
     void Start()
     {
-        // Configura o tempo inicial com base na dificuldade.
+        
         switch (GameSettings.dificuldadeAtual)
         {
             case Dificuldade.Facil:
@@ -43,27 +43,26 @@ public class TimeManager : MonoBehaviour
                 tempoRestante = 0;
                 jogoAtivo = false;
                 Debug.Log("Tempo esgotado! Game Over!");
-                // Aqui você pode chamar funções para finalizar o jogo.
             }
             UpdateUI();
         }
     }
 
-    // Atualiza o display do timer.
+    
     void UpdateUI()
     {
         if (timerText != null)
             timerText.text = "Tempo: " + Mathf.RoundToInt(tempoRestante).ToString();
     }
 
-    // Método para atualizar a contagem de pares (chame de outro script ao acertar um par).
+    
     public void AtualizarPares(int paresEncontrados, int totalPares)
     {
         if (pairsText != null)
             pairsText.text = "Pares: " + paresEncontrados.ToString() + "/" + totalPares.ToString();
     }
 
-    // Caso queira reiniciar o timer ao reiniciar o jogo.
+    
     public void ResetTimer()
     {
         switch (GameSettings.dificuldadeAtual)

@@ -7,14 +7,12 @@ public class UIController : MonoBehaviour
     public BoardManager boardManager;
     public TimeManager timeManager;
 
-    // Chamado pelo botão de reiniciar.
+   
     public void ReiniciarJogo()
     {
         boardManager.ResetBoard();
         timeManager.ResetTimer();
     }
-
-    // Chamado pelo botão de voltar ao menu.
     public void VoltarAoMenu()
     {
         SceneManager.LoadScene("MainMenu");

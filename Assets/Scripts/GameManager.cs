@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public List<Card> todasAsCartas; // Arraste manualmente no Inspector
+    public List<Card> todasAsCartas; 
     public Sprite[] spritesFaseAtual;
 
     private Card primeiraCarta, segundaCarta;
