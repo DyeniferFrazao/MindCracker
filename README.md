@@ -1,5 +1,5 @@
 # 🧠 Mind Cracker
-> Um jogo de memória que começa fofo... e termina quebrando sua mente. Desenvolvido em Unity por Dyênifer Thaís Frazão & CodeBugs Dev Team.
+> Um jogo de memória que começa fofo... e termina quebrando sua mente. Desenvolvido em Unity por Dyênifer Thaís Frazão.
 
 <div>
       <img height=400 width=370 align="center" src= "Quebra-Cabeça Mental Cósmico.png"/>
